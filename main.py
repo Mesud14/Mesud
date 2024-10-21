@@ -1,11 +1,10 @@
 import random
-isim = input("Lütfen adınızı giriniz : ")
-soyisim = input("Lütfen soyadınızı giriniz : ")
 karakterler = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 sifre_uzunlugu = int(input("Şifre Uzunluğunu Girin :"))
+istek = input('Şifrenizde olmasını istediğiniz karakterleri yazın: (3 tane karakter yazın)')
 sifre = ""
-for i in range(sifre_uzunlugu):
+for i in range((sifre_uzunlugu - 3)):
     sifre += random.choice(karakterler)
 
 
-print("Merhaba", isim, soyisim, "Şifreniz : " , sifre)
+print(sifre,istek)
